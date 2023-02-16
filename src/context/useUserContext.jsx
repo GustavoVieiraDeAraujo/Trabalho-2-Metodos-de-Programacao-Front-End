@@ -42,8 +42,15 @@ function UserProvider({children}) {
 
 const logout = async () => {
     if(window.confirm("Deseja sair de sua conta?")){
+        try {
+            await api.delete('/user/logout');
+        } catch(err) {
+            // se o back-end estiver fora do ar, segue limpando a sessao local mesmo assim
+        }
         setUser({});
         Cookie.remove('mp.user');
+        api.defaults.headers.common["X-User-Token"] = "";
+        api.defaults.headers.common["X-User-Email"] = "";
         navigate('/')
     }
 }
