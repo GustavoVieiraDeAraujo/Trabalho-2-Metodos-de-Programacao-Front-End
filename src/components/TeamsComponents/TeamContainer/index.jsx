@@ -7,10 +7,10 @@ function TeamsContainer({user,teams}) {
     return (
             <Container user={user.is_teacher}>
                 <div className='teams__container'>
-                {teams.map((item,index)=>{return (
-                    <div className='teams__content'>
-                        <TeamCard key={index} name={item.name}  />
-                    </div> 
+                {teams.map((item)=>{return (
+                    <div className='teams__content' key={item.id}>
+                        <TeamCard name={item.name}  />
+                    </div>
                 )})}
                 </div>
             </Container>

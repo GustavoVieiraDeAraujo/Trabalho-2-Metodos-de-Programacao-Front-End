@@ -7,10 +7,10 @@ function QuizContainer({user,quiz}) {
     return (
             <Container user={user.is_teacher}>
                 <div className='quiz__container'>
-                {quiz.map((item,index)=>{return (
-                    <div className='Quiz__content'>
-                        <QuizCard key={index} title={item.title} subject={item.subject} />
-                    </div> 
+                {quiz.map((item)=>{return (
+                    <div className='Quiz__content' key={item.id}>
+                        <QuizCard title={item.title} subject={item.subject} />
+                    </div>
                 )})}
                 </div>
             </Container>
