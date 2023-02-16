@@ -13,7 +13,7 @@ function UserProvider({children}) {
 
     const login = async (email, password) => {
         try{
-            const response = await api.get('/user/login', {params: {email, password}})
+            const response = await api.post('/user/login', {email, password})
             
             if(response.data){
                 setUser(response.data)
