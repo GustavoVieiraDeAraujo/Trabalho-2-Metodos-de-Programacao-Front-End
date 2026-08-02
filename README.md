@@ -1,8 +1,8 @@
-# Plataforma de Questoes — Front-End
+# Plataforma de Questoes (Front-End)
 
 Projeto da disciplina **Metodos de Programacao (MP)** do Departamento de Ciencia da Computacao da Universidade de Brasilia. SPA em React para uma plataforma de questoes academicas, onde professores criam perguntas e alunos as respondem, com autenticacao, estatisticas e organizacao por turmas.
 
-> **Back-End:** [MP-Back-End](https://github.com/GustavoVieiraDeAraujo/MP-Back-End) (Rails API na porta 3000)
+> **Back-End:** [Trabalho-2-Metodos-de-Programacao-Back-End](https://github.com/GustavoVieiraDeAraujo/Trabalho-2-Metodos-de-Programacao-Back-End) (Rails API na porta 3000)
 >
 > **Design:** [Figma](https://www.figma.com/file/ezP9maq6gd30stmY59pMFZ/Trabalho-MP)
 
@@ -129,3 +129,7 @@ yarn lint:fix
 | `/QuestionAnswer/:id`   | Responder        | Aluno responde e ve se acertou                        |
 | `/turmas`               | Turmas           | Listagem de turmas cadastradas                        |
 | `/provas`               | Provas           | Listagem de provas cadastradas                        |
+
+---
+
+> Documentacao gerada com auxilio de IA.
